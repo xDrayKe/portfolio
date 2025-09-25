@@ -12,8 +12,8 @@ function Navigation() {
     ]
 
     const socialLinks = [
-        { href: 'https://github.com', icon: 'fab fa-github', title: 'GitHub' },
-        { href: 'https://linkedin.com', icon: 'fab fa-linkedin', title: 'LinkedIn' },
+        { href: 'https://github.com/xDrayKe', icon: 'fab fa-github', title: 'GitHub' },
+        { href: 'https://www.linkedin.com/in/dossantos-galaad/', icon: 'fab fa-linkedin', title: 'LinkedIn' },
     ]
 
     return (
