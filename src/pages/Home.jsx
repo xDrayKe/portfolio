@@ -4,6 +4,7 @@ import '../styles/Home.css'
 
 function Home() {
     useEffect(() => {
+        document.title = "Acceuil | Portfolio"
         // Animation d'entrée progressive
         const elements = document.querySelectorAll('.hero-title, .hero-description, .cta-buttons, .hero-image')
         elements.forEach((el, index) => {
@@ -45,10 +46,9 @@ function Home() {
                         Développeur full-stack passionné, je veux mettre mes compétences au service d’entreprises en quête de nouveaux talents.
                     </p>
                     <div className="cta-buttons">
-                        <a href="/resume.pdf" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <a href="/resume" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                             CV <i className="fas fa-external-link-alt"></i>
                         </a>
-                        <a href="/contact" className="btn btn-secondary">Contact</a>
                     </div>
                 </div>
             </div>

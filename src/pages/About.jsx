@@ -4,6 +4,7 @@ import '../styles/About.css'
 
 function About() {
     useEffect(() => {
+        document.title = "A propos | Portfolio"
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -29,17 +30,18 @@ function About() {
     }, [])
 
     const skills = [
-        { name: 'JavaScript', level: 85, icon: 'fab fa-js-square' },
-        { name: 'React.js', level: 80, icon: 'fab fa-react' },
-        { name: 'Node.js', level: 80, icon: 'fab fa-node-js' },
-
-        { name: 'Python', level: 10, icon: 'fab fa-python' },
-        { name: 'Git', level: 50, icon: 'fab fa-git-alt' },
-        { name: 'HTML/CSS', level: 80, icon: 'fas fa-code' },
-
-        { name: 'MongoDB', level: 75, icon: 'fas fa-database' },
-        { name: 'Mariadb', level: 75, icon: 'fas fa-database' },
-        { name: 'SQLite', level: 75, icon: 'fas fa-database' },
+        { name: 'JavaScript', level: 'Avancé', icon: 'fab fa-js-square' },
+        { name: 'React.js', level: 'Avancé', icon: 'fab fa-react' },
+        { name: 'HTML/CSS', level: 'Avancé', icon: 'fas fa-code' },
+        { name: 'Node.js', level: 'Intermédiaire', icon: 'fab fa-node-js' },
+        { name: 'Python', level: 'Débutant', icon: 'fab fa-python' },
+        { name: 'Java', level: 'Intermédiaire', icon: 'fab fa-java' },
+        { name: 'PHP', level: 'Débutant', icon: 'fab fa-php' },
+        { name: 'Typescript', level: 'Débutant', icon: 'fab fa-js' },
+        { name: 'Git', level: 'Intermédiaire', icon: 'fab fa-git-alt' },
+        { name: 'MongoDB', level: 'Avancé', icon: 'fas fa-database' },
+        { name: 'Mariadb', level: 'Avancé', icon: 'fas fa-database' },
+        { name: 'SQLite', level: 'Avancé', icon: 'fas fa-database' },
     ]
 
     const experiences = [
@@ -78,7 +80,7 @@ function About() {
                 </section>
 
                 <section className="skills-section fade-in-element">
-                    <h2>Compétences - Technologie</h2>
+                    <h2>Compétences - Technologies</h2>
                     <div className="skills-grid">
                         {skills.map((skill, index) => (
                             <div key={index} className="skill-card">
@@ -86,13 +88,9 @@ function About() {
                                     <i className={skill.icon}></i>
                                     <span>{skill.name}</span>
                                 </div>
-                                <div className="skill-bar">
-                                    <div
-                                        className="skill-progress"
-                                        style={{ '--progress': `${skill.level}%` }}
-                                    ></div>
-                                </div>
-                                <span className="skill-percentage">{skill.level}%</span>
+                                <span className={`skill-level skill-level-${skill.level.toLowerCase()}`}>
+                                    {skill.level}
+                                </span>
                             </div>
                         ))}
                     </div>

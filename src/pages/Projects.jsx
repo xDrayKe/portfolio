@@ -67,6 +67,7 @@ const projects = [
 
 function Projects() {
     useEffect(() => {
+        document.title = "Mes projets | Portfolio"
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
