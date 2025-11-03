@@ -13,9 +13,11 @@ const ProjectCard = ({ project }) => (
             <img src={project.image} alt={project.title} loading="lazy" />
             <div className="project-overlay">
                 <div className="project-links">
-                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
-                        <i className="fab fa-github"></i>
-                    </a>
+                    {project.github && (
+                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
+                            <i className="fab fa-github"></i>
+                        </a>
+                    )}
                     {project.demo && (
                         <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-link">
                             <i className="fas fa-external-link-alt"></i>
@@ -45,12 +47,24 @@ const projects = {
         {
             id: 5,
             title: 'Un portfolio personnel',
-            description: 'Mon tout premier projet avec un "client", mon frère m\'a demander un portfolio afin de présenter ses projets et ses compétences.',
+            description: 'Mon tout premier projet avec un "client",il m\'a demander un portfolio afin de présenter ses projets et ses compétences.',
             image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop',
             technologies: ['HTML', 'CSS3', 'Javascript'],
             category: 'Frontend',
             github: 'https://github.com/xDrayKe/site-killian',
             demo: 'https://site-killian.vercel.app/',
+            status: "Terminé",
+            featured: false
+        },
+        {
+            id: 4,
+            title: 'Systeme solaire 3D',
+            description: 'Mon premier test en Three.js afin de réalisé un système solaire en direct.',
+            image: 'https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=500&h=300&fit=crop',
+            technologies: ['Python', 'Three.js'],
+            category: 'Frontend',
+            github: 'https://github.com/xDrayKe/solar-system-3d',
+            demo: 'https://solar-system-3d-wine.vercel.app/',
             status: "Terminé",
             featured: false
         },
@@ -80,18 +94,6 @@ const projects = {
             status: "Terminé",
             featured: false
         },
-        {
-            id: 4,
-            title: 'Systeme solaire 3D',
-            description: 'Test de visualisation 3D d\'un système solaire avec React et Three.js.',
-            image: 'https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=500&h=300&fit=crop',
-            technologies: ['Node.js', 'Three.js'],
-            category: 'Frontend',
-            github: 'https://github.com/xDrayKe/test-planete',
-            demo: null,
-            status: "Terminé",
-            featured: false
-        },
     ],
     inProgress: [
         {
@@ -101,7 +103,7 @@ const projects = {
             image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop',
             technologies: ['JavaScript', 'API', 'Chart.js'],
             category: 'frontend',
-            github: 'https://github.com',
+            github: null,
             demo: null,
             status: "En cours",
             featured: true
