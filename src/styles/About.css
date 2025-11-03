@@ -1,437 +1,430 @@
 /* About Page Styles */
 .about-page {
-    min-height: 100vh;
-    padding: 2rem 0;
+   min-height: 100vh;
+   padding: 2rem 0;
 }
 
 .about-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 4rem;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 4rem;
 }
 
 .about-header {
-    text-align: center;
-    margin-bottom: 4rem;
+   text-align: center;
+   margin-bottom: 4rem;
 }
 
 .about-header h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    color: var(--text-dark);
-    margin-bottom: 1rem;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+   font-size: 3rem;
+   font-weight: 800;
+   color: var(--text-dark);
+   margin-bottom: 1rem;
+   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
 }
 
 .about-header p {
-    font-size: 1.2rem;
-    color: var(--text-medium);
-    max-width: 600px;
-    margin: 0 auto;
+   font-size: 1.2rem;
+   color: var(--text-medium);
+   max-width: 600px;
+   margin: 0 auto;
 }
 
 /* Intro Section */
 .about-intro {
-    margin-top: 20px;
-    text-align: center;
-    margin-bottom: 4rem;
-    align-items: center;
+   margin-top: 20px;
+   text-align: center;
+   margin-bottom: 4rem;
+   align-items: center;
 }
 
 h2 {
-    margin-bottom: 1rem;
-    margin-top: 3rem;
+   margin-bottom: 1rem;
+   margin-top: 3rem;
 }
 
 .intro-content h2 {
-    font-size: 2.5rem;
-    color: var(--text-dark);
+   font-size: 2.5rem;
+   color: var(--text-dark);
 }
 
 .intro-content p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: var(--text-medium);
-    margin-bottom: 1.5rem;
+   font-size: 1.1rem;
+   line-height: 1.7;
+   color: var(--text-medium);
+   margin-bottom: 1.5rem;
 }
 
 .intro-stats {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
 }
 
 .stat {
-    text-align: center;
-    padding: 1.5rem;
-    background: var(--bg-glass);
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--border-glass);
-    border-radius: 1rem;
-    transition: transform 0.3s ease;
+   text-align: center;
+   padding: 1.5rem;
+   background: var(--bg-glass);
+   backdrop-filter: blur(10px);
+   border: 1px solid var(--border-glass);
+   border-radius: 1rem;
+   transition: transform 0.3s ease;
 }
 
 .stat:hover {
-    transform: translateY(-5px);
+   transform: translateY(-5px);
 }
 
 .stat h3 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
+   font-size: 2.5rem;
+   font-weight: 800;
+   color: var(--primary-color);
+   margin-bottom: 0.5rem;
 }
 
 .stat p {
-    color: var(--text-medium);
-    font-weight: 500;
+   color: var(--text-medium);
+   font-weight: 500;
 }
 
 /* Skills Section */
 .skills-section {
-    margin-bottom: 4rem;
+   margin-bottom: 4rem;
 }
 
 .skills-section h2 {
-    font-size: 2.5rem;
-    color: var(--text-dark);
-    text-align: center;
+   font-size: 2.5rem;
+   color: var(--text-dark);
+   text-align: center;
 }
 
 .skills-grid {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+   margin-top: 30px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   gap: 1.5rem;
 }
 
 .skill-card {
-    background: var(--bg-glass);
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--border-glass);
-    border-radius: 1rem;
-    padding: 1.5rem;
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   background: var(--bg-glass);
+   backdrop-filter: blur(10px);
+   border: 1px solid var(--border-glass);
+   border-radius: 1rem;
+   padding: 1.5rem;
+   transition: all 0.3s ease;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .skill-card:hover {
-    transform: translateY(-5px);
-    background: var(--bg-glass-hover);
+   transform: translateY(-5px);
+   background: var(--bg-glass-hover);
 }
 
 .skill-header {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
+   display: flex;
+   align-items: center;
+   gap: 0.75rem;
+   margin-bottom: 1rem;
 }
 
 .skill-header i {
-    font-size: 1.5rem;
-    color: var(--primary-color);
+   font-size: 1.5rem;
+   color: var(--primary-color);
 }
 
 .skill-header span {
-    font-weight: 600;
-    color: var(--text-dark);
+   font-weight: 600;
+   color: var(--text-dark);
 }
 
 .skill-bar {
-    height: 8px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
-    overflow: hidden;
-    margin-bottom: 0.5rem;
+   height: 8px;
+   background: rgba(255, 255, 255, 0.2);
+   border-radius: 4px;
+   overflow: hidden;
+   margin-bottom: 0.5rem;
 }
 
 .skill-progress {
-    height: 100%;
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-    border-radius: 4px;
-    width: var(--progress);
-    transition: width 1s ease;
-    animation: progressFill 2s ease-out;
+   height: 100%;
+   background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+   border-radius: 4px;
+   width: var(--progress);
+   transition: width 1s ease;
+   animation: progressFill 2s ease-out;
 }
 
 /* Ajoute dans About.css */
 .skill-level {
-    display: inline-block;
-    margin-top: 0.5rem;
-    padding: 0.3rem 1rem;
-    border-radius: 20px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    background: var(--bg-glass);
-    color: var(--primary-color);
-    border: 1px solid var(--border-glass);
-    transition: background 0.3s, color 0.3s;
+   display: inline-block;
+   margin-top: 0.5rem;
+   padding: 0.3rem 1rem;
+   border-radius: 20px;
+   font-size: 0.95rem;
+   font-weight: 600;
+   background: var(--bg-glass);
+   color: var(--primary-color);
+   border: 1px solid var(--border-glass);
+   transition: background 0.3s, color 0.3s;
 }
 
 .skill-level-avancé {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: #fff;
+   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+   color: #fff;
 }
 
 .skill-level-intermédiaire {
-    background: var(--bg-glass-hover);
-    color: var(--primary-color);
+   background: var(--bg-glass-hover);
+   color: var(--primary-color);
 }
 
 .skill-level-débutant {
-    background: #f3f4f6;
-    color: var(--text-light);
+   background: #f3f4f6;
+   color: var(--text-light);
 }
 
 @keyframes progressFill {
-    from {
-        width: 0;
-    }
+   from {
+      width: 0;
+   }
 
-    to {
-        width: var(--progress);
-    }
+   to {
+      width: var(--progress);
+   }
 }
 
 .skill-percentage {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--text-medium);
+   font-size: 0.9rem;
+   font-weight: 600;
+   color: var(--text-medium);
 }
 
 /* Experience Section */
 .experience-section {
-    margin-bottom: 4rem;
+   margin-bottom: 4rem;
 }
 
 .experience-section h2 {
-    font-size: 2.5rem;
-    color: var(--text-dark);
-    text-align: center;
+   font-size: 2.5rem;
+   color: var(--text-dark);
+   text-align: center;
 }
 
 .timeline {
-    position: relative;
-    padding: 2rem 0;
+   position: relative;
+   padding: 2rem 0;
 }
 
 .timeline::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
-    transform: translateX(-50%);
+   content: '';
+   position: absolute;
+   left: 50%;
+   top: 0;
+   bottom: 0;
+   width: 2px;
+   background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+   transform: translateX(-50%);
 }
 
 .timeline-item {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 2rem;
-    position: relative;
-    margin-bottom: 3rem;
-    width: 50%;
+   display: flex;
+   justify-content: flex-end;
+   padding-right: 2rem;
+   position: relative;
+   margin-bottom: 3rem;
+   width: 50%;
 }
 
 .timeline-item:nth-child(even) {
-    align-self: flex-end;
-    justify-content: flex-start;
-    padding-left: 2rem;
-    padding-right: 0;
-    left: 50%;
+   align-self: flex-end;
+   justify-content: flex-start;
+   padding-left: 2rem;
+   padding-right: 0;
+   left: 50%;
 }
 
 .timeline-marker {
-    position: absolute;
-    top: 1rem;
-    right: -0.75rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    border-radius: 50%;
-    border: 3px solid rgba(255, 255, 255, 0.9);
-    z-index: 2;
+   position: absolute;
+   top: 2rem;
+   right: -0.75rem;
+   width: 1.5rem;
+   height: 1.5rem;
+   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+   border-radius: 50%;
+   border: 3px solid rgba(255, 255, 255, 0.9);
+   z-index: 2;
 }
 
 .timeline-item:nth-child(even) .timeline-marker {
-    left: -0.75rem;
-    right: auto;
+   left: -0.75rem;
+   right: auto;
 }
 
 .timeline-content {
-    background: var(--bg-glass);
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--border-glass);
-    border-radius: 1rem;
-    padding: 2rem;
-    max-width: 400px;
-    transition: all 0.3s ease;
+   background: var(--bg-glass);
+   backdrop-filter: blur(10px);
+   border: 1px solid var(--border-glass);
+   border-radius: 1rem;
+   padding: 2rem;
+   max-width: 400px;
+   transition: all 0.3s ease;
 }
 
 .timeline-content:hover {
-    transform: translateY(-5px);
-    background: var(--bg-glass-hover);
+   transform: translateY(-5px);
+   background: var(--bg-glass-hover);
 }
 
 .timeline-content h3 {
-    color: var(--text-dark);
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
+   color: var(--text-dark);
+   font-size: 1.3rem;
+   margin-bottom: 0.5rem;
 }
 
 .timeline-content h4 {
-    color: var(--primary-color);
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
+   color: var(--primary-color);
+   font-size: 1.1rem;
+   margin-bottom: 0.5rem;
 }
 
 .timeline-content .period {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    font-weight: 500;
+   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+   color: white;
+   padding: 0.25rem 0.75rem;
+   border-radius: 15px;
+   font-size: 0.8rem;
+   font-weight: 500;
 }
 
 .timeline-content p {
-    color: var(--text-medium);
-    line-height: 1.6;
-    margin-top: 1rem;
+   color: var(--text-medium);
+   line-height: 1.6;
+   margin-top: 1rem;
 }
 
 /* Values Section */
 .values-section h2 {
-    font-size: 2.5rem;
-    color: var(--text-dark);
-    text-align: center;
+   font-size: 2rem;
+   text-align: center;
+   margin-bottom: 3rem;
 }
 
 .values-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
-    gap: 2rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   gap: 2rem;
+   padding: 1rem;
 }
 
 .value-card {
-    text-align: center;
-    padding: 2rem;
-    background: var(--bg-glass);
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--border-glass);
-    border-radius: 1rem;
-    transition: all 0.3s ease;
-}
-
-.value-card:hover {
-    transform: translateY(-10px);
-    background: var(--bg-glass-hover);
+   text-align: center;
+   padding: 2.5rem 2rem;
+   background: var(--bg-glass);
+   border-radius: 1rem;
+   border: 1px solid var(--border-glass);
 }
 
 .value-card i {
-    font-size: 3rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
+   font-size: 2.5rem;
+   color: var(--primary-color);
+   margin-bottom: 1.5rem;
 }
 
 .value-card h3 {
-    color: var(--text-dark);
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
+   font-size: 1.3rem;
+   margin-bottom: 1rem;
 }
 
 .value-card p {
-    color: var(--text-medium);
-    line-height: 1.6;
+   line-height: 1.6;
+   color: var(--text-medium);
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .about-container {
-        padding: 0 3rem;
-    }
+   .about-container {
+      padding: 0 3rem;
+   }
 
-    .about-intro {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
+   .about-intro {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+   }
 
-    .intro-stats {
-        flex-direction: row;
-        justify-content: space-around;
-    }
+   .intro-stats {
+      flex-direction: row;
+      justify-content: space-around;
+   }
 }
 
 @media (max-width: 768px) {
-    .about-container {
-        padding: 0 2rem;
-    }
+   .about-container {
+      padding: 0 2rem;
+   }
 
-    .about-header h1 {
-        font-size: 2.5rem;
-    }
+   .about-header h1 {
+      font-size: 2.5rem;
+   }
 
 
-    .intro-content h2,
-    .skills-section h2,
-    .experience-section h2,
-    .values-section h2 {
-        font-size: 2rem;
-    }
+   .intro-content h2,
+   .skills-section h2,
+   .experience-section h2,
+   .values-section h2 {
+      font-size: 2rem;
+   }
 
-    .timeline::before {
-        left: 2rem;
-    }
+   .timeline::before {
+      left: 2rem;
+   }
 
-    .timeline-item {
-        width: 100%;
-        padding-left: 4rem;
-        padding-right: 0;
-    }
+   .timeline-item {
+      width: 100%;
+      padding-left: 4rem;
+      padding-right: 0;
+   }
 
-    .timeline-item:nth-child(even) {
-        left: 0;
-        padding-left: 4rem;
-    }
+   .timeline-item:nth-child(even) {
+      left: 0;
+      padding-left: 4rem;
+   }
 
-    .timeline-marker {
-        left: 1.25rem !important;
-        right: auto !important;
-    }
+   .timeline-marker {
+      left: 1.25rem !important;
+      right: auto !important;
+   }
 
-    .intro-stats {
-        flex-direction: column;
-        gap: 1rem;
-    }
+   .intro-stats {
+      flex-direction: column;
+      gap: 1rem;
+   }
 }
 
 @media (max-width: 480px) {
-    .about-container {
-        padding: 0 1rem;
-    }
+   .about-container {
+      padding: 0 1rem;
+   }
 
-    .about-header h1 {
-        font-size: 2rem;
-    }
+   .about-header h1 {
+      font-size: 2rem;
+   }
 
-    .intro-content h2 {
-        font-size: 1.75rem;
-    }
+   .intro-content h2 {
+      font-size: 1.75rem;
+   }
 
-    .skills-section h2,
-    .experience-section h2,
-    .values-section h2 {
-        font-size: 1.75rem;
-    }
+   .skills-section h2,
+   .experience-section h2,
+   .values-section h2 {
+      font-size: 1.75rem;
+   }
 
-    .values-grid {
-        grid-template-columns: 1fr;
-    }
+   .values-grid {
+      grid-template-columns: 1fr;
+   }
 }

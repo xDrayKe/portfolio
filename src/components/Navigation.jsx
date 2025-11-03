@@ -3,12 +3,13 @@ import { useState } from 'react'
 import '../styles/Navigation.css'
 
 function Navigation() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [isMenuOpen, setIsMenuOpen] = useState()
 
     const navItems = [
-        { path: '/', label: 'Acceuil' },
-        { path: '/about', label: 'A propos' },
+        { path: '/', label: 'Accueil' },
+        { path: '/about', label: 'À propos' },
         { path: '/projects', label: 'Projets' },
+        { path: '/contact', label: 'Contact' }, // Ajout d'une page contact dédiée
     ]
 
     const socialLinks = [
@@ -26,7 +27,7 @@ function Navigation() {
                                 <NavLink
                                     to={item.path}
                                     className={({ isActive }) => isActive ? 'active' : ''}
-                                    onClick={() => setIsMenuOpen(false)}
+                                    onClick={() => setIsMenuOpen()}
                                 >
                                     {item.label}
                                 </NavLink>
@@ -51,8 +52,8 @@ function Navigation() {
                             </a>
                         ))}
                         {/* <button className="theme-toggle" title="Dark Mode">
-                                <i className="fas fa-moon"></i>
-                            </button> */}
+                      <i className="fas fa-moon"></i>
+                   </button> */}
                     </div>
 
                     <button

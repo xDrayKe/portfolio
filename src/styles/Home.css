@@ -1,243 +1,243 @@
 /* Home Page Styles */
 
 .home-container {
-    display: flex;
-    align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 2rem 4rem;
-    min-height: 70vh;
-    gap: 4rem;
+   display: flex;
+   align-items: center;
+   max-width: 1400px;
+   margin: 0 auto;
+   padding: 2rem 4rem;
+   min-height: 70vh;
+   gap: 4rem;
 }
 
 /* Hero Image Section */
 .hero-image {
-    flex: 1;
-    position: relative;
-    max-width: 600px;
-    display: flex;
-    align-self: center;
-    justify-content: center;
+   flex: 1;
+   position: relative;
+   max-width: 600px;
+   display: flex;
+   align-self: center;
+   justify-content: center;
 }
 
 .hero-image img {
-    border-radius: 20px;
-    box-shadow: var(--shadow-primary);
-    position: relative;
-    z-index: 2;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+   border-radius: 20px;
+   box-shadow: var(--shadow-primary);
+   position: relative;
+   z-index: 2;
+   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 }
 
 /* Hero Content Section */
 .hero-content {
-    flex: 1;
-    padding-left: 2rem;
+   flex: 1;
+   padding-left: 2rem;
 }
 
 .hero-title {
-    font-size: 3.5rem;
-    font-weight: 800;
-    color: var(--text-dark);
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+   font-size: 3.5rem;
+   font-weight: 800;
+   color: var(--text-dark);
+   line-height: 1.1;
+   margin-bottom: 1.5rem;
+   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
 }
 
 .hero-description {
-    font-size: 1.2rem;
-    color: var(--text-medium);
-    line-height: 1.7;
-    margin-bottom: 2.5rem;
-    max-width: 500px;
+   font-size: 1.2rem;
+   color: var(--text-medium);
+   line-height: 1.7;
+   margin-bottom: 2.5rem;
+   max-width: 500px;
 }
 
 /* CTA Buttons */
 .cta-buttons {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    flex-wrap: wrap;
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+   flex-wrap: wrap;
 }
 
 .btn {
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    font-family: inherit;
+   padding: 1rem 2rem;
+   border: none;
+   border-radius: 50px;
+   font-size: 1rem;
+   font-weight: 600;
+   text-decoration: none;
+   display: inline-flex;
+   align-items: center;
+   gap: 0.5rem;
+   transition: all 0.3s ease;
+   cursor: pointer;
+   font-family: inherit;
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    color: white;
-    box-shadow: var(--shadow-primary);
+   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+   color: white;
+   box-shadow: var(--shadow-primary);
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-hover);
+   transform: translateY(-3px);
+   box-shadow: var(--shadow-hover);
 }
 
 .btn-secondary {
-    background: var(--bg-glass);
-    color: var(--text-dark);
-    border: 2px solid var(--border-glass);
-    backdrop-filter: blur(10px);
+   background: var(--bg-glass);
+   color: var(--text-dark);
+   border: 2px solid var(--border-glass);
+   backdrop-filter: blur(10px);
 }
 
 .btn-secondary:hover {
-    background: var(--bg-glass-hover);
-    border-color: rgba(102, 126, 234, 0.4);
-    transform: translateY(-2px);
+   background: var(--bg-glass-hover);
+   border-color: rgba(102, 126, 234, 0.4);
+   transform: translateY(-2px);
 }
 
 /* Floating Elements */
 .floating-element {
-    position: absolute;
-    z-index: 100;
-    transition: transform 0.3s ease;
+   position: absolute;
+   z-index: 100;
+   transition: transform 0.3s ease;
 }
 
 .floating-element:hover {
-    transform: scale(1.1) !important;
+   transform: scale(1.1) !important;
 }
 
 .hire-me-badge {
-    bottom: 10%;
-    left: 5%;
-    width: 120px;
-    height: 120px;
-    background: linear-gradient(135deg, var(--text-dark), #4a5568);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-    font-size: 0.9rem;
-    text-align: center;
-    box-shadow: var(--shadow-dark);
-    animation: pulse 2s infinite;
-    cursor: pointer;
+   bottom: 10%;
+   left: 5%;
+   width: 120px;
+   height: 120px;
+   background: linear-gradient(135deg, var(--text-dark), #4a5568);
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   font-weight: bold;
+   font-size: 0.9rem;
+   text-align: center;
+   box-shadow: var(--shadow-dark);
+   animation: pulse 2s infinite;
+   cursor: pointer;
 }
 
 .lightbulb {
-    top: 15%;
-    right: 10%;
-    font-size: 3rem;
-    color: var(--accent-color);
-    animation: bounce 3s infinite;
-    cursor: pointer;
+   top: 15%;
+   right: 10%;
+   font-size: 3rem;
+   color: var(--accent-color);
+   animation: bounce 3s infinite;
+   cursor: pointer;
 }
 
 .tech-labels {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+   position: absolute;
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
 }
 
 .tech-label {
-    background: var(--bg-glass);
-    backdrop-filter: blur(10px);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    color: var(--text-dark);
-    margin: 0.5rem 0;
-    transform: rotate(-90deg);
-    transform-origin: left center;
-    border: 1px solid var(--border-glass);
-    white-space: nowrap;
+   background: var(--bg-glass);
+   backdrop-filter: blur(10px);
+   padding: 0.5rem 1rem;
+   border-radius: 20px;
+   font-size: 0.8rem;
+   color: var(--text-dark);
+   margin: 0.5rem 0;
+   transform: rotate(-90deg);
+   transform-origin: left center;
+   border: 1px solid var(--border-glass);
+   white-space: nowrap;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .home-container {
-        padding: 2rem 3rem;
-        gap: 3rem;
-    }
+   .home-container {
+      padding: 2rem 3rem;
+      gap: 3rem;
+   }
 
-    .hero-title {
-        font-size: 3rem;
-    }
+   .hero-title {
+      font-size: 3rem;
+   }
 
-    .hero-description {
-        font-size: 1.1rem;
-    }
+   .hero-description {
+      font-size: 1.1rem;
+   }
 }
 
 @media (max-width: 768px) {
-    .home-container {
-        flex-direction: column;
-        padding: 2rem 2rem;
-        text-align: center;
-        gap: 2rem;
-    }
+   .home-container {
+      flex-direction: column;
+      padding: 2rem 2rem;
+      text-align: center;
+      gap: 2rem;
+   }
 
-    .hero-content {
-        padding-left: 0;
-        order: 2;
-    }
+   .hero-content {
+      padding-left: 0;
+      order: 2;
+   }
 
-    .hero-image {
-        order: 1;
-        max-width: 400px;
-    }
+   .hero-image {
+      order: 1;
+      max-width: 400px;
+   }
 
-    .hero-title {
-        font-size: 2.5rem;
-    }
+   .hero-title {
+      font-size: 2.5rem;
+   }
 
-    .hero-description {
-        font-size: 1rem;
-        max-width: 100%;
-    }
+   .hero-description {
+      font-size: 1rem;
+      max-width: 100%;
+   }
 
-    .cta-buttons {
-        justify-content: center;
-    }
+   .cta-buttons {
+      justify-content: center;
+   }
 
-    .floating-element {
-        display: none;
-    }
+   .floating-element {
+      display: none;
+   }
 }
 
 @media (max-width: 480px) {
-    .home-container {
-        padding: 1rem;
-    }
+   .home-container {
+      padding: 1rem;
+   }
 
-    .hero-title {
-        font-size: 2rem;
-    }
+   .hero-title {
+      font-size: 2rem;
+   }
 
-    .hero-description {
-        font-size: 0.95rem;
-    }
+   .hero-description {
+      font-size: 0.95rem;
+   }
 
-    .btn {
-        padding: 0.75rem 1.5rem;
-        font-size: 0.9rem;
-    }
+   .btn {
+      padding: 0.75rem 1.5rem;
+      font-size: 0.9rem;
+   }
 
-    .cta-buttons {
-        flex-direction: column;
-        width: 100%;
-    }
+   .cta-buttons {
+      flex-direction: column;
+      width: 100%;
+   }
 
-    .btn {
-        width: 100%;
-        justify-content: center;
-    }
+   .btn {
+      width: 100%;
+      justify-content: center;
+   }
 }

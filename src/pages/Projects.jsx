@@ -2,6 +2,42 @@ import { useEffect } from 'react'
 import '../styles/global.css'
 import '../styles/Projects.css'
 
+const ProjectCard = ({ project }) => (
+    <div className={`project-card fade-in-element ${project.featured ? 'featured' : ''}`}>
+        {project.featured && <div className="featured-badge">À la une</div>}
+        <div className={`status-badge ${project.status.toLowerCase().replace(' ', '-')}`}>
+            {project.status}
+        </div>
+
+        <div className="project-image">
+            <img src={project.image} alt={project.title} loading="lazy" />
+            <div className="project-overlay">
+                <div className="project-links">
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
+                        <i className="fab fa-github"></i>
+                    </a>
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-link">
+                        <i className="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div className="project-content">
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <div className="project-stack">
+                <h4>Technologies utilisées:</h4>
+                <div className="tech-tags">
+                    {project.technologies.map(tech => (
+                        <span key={tech} className="tech-tag">{tech}</span>
+                    ))}
+                </div>
+            </div>
+        </div>
+    </div>
+)
+
 const projects = [
     {
         id: 1,
@@ -25,7 +61,7 @@ const projects = [
         github: 'https://github.com',
         demo: 'https://demo.com',
         status: "En cours",
-        featured: false
+        featured: true
     },
     {
         id: 3,
@@ -49,7 +85,7 @@ const projects = [
         github: 'https://github.com/xDrayKe/test-planete',
         demo: 'https://demo.com',
         status: "Terminé",
-        featured: true
+        featured: false
     },
     {
         id: 5,
@@ -61,7 +97,7 @@ const projects = [
         github: 'https://github.com/xDrayKe/site-killian',
         demo: 'https://demo.com',
         status: "Terminé",
-        featured: true
+        featured: false
     }
 ]
 
@@ -82,10 +118,6 @@ function Projects() {
         return () => observer.disconnect()
     }, [])
 
-    const getStatusClass = (status) => {
-        return status.toLowerCase().replace(' ', '-')
-    }
-
     return (
         <div className="projects-page">
             <div className="projects-container">
@@ -96,40 +128,10 @@ function Projects() {
 
                 <div className="projects-grid">
                     {projects.map((project, index) => (
-                        <div
+                        <ProjectCard
                             key={project.id}
-                            className={`project-card fade-in-element ${project.featured ? 'featured' : ''}`}
-                            style={{ animationDelay: `${index * 0.1}s` }}
-                        >
-                            {project.featured && <div className="featured-badge">Featured</div>}
-                            <div className={`status-badge ${getStatusClass(project.status)}`}>
-                                {project.status}
-                            </div>
-
-                            <div className="project-image">
-                                <img src={project.image} alt={project.title} />
-                                <div className="project-overlay">
-                                    <div className="project-links">
-                                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
-                                            <i className="fab fa-github"></i>
-                                        </a>
-                                        {/* <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-link">
-                                            <i className="fas fa-external-link-alt"></i>
-                                        </a> */}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="project-content">
-                                <h3>{project.title}</h3>
-                                <p>{project.description}</p>
-                                <div className="project-technologies">
-                                    {project.technologies.map((tech, i) => (
-                                        <span key={i} className="tech-tag">{tech}</span>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
+                            project={project}
+                        />
                     ))}
                 </div>
             </div>

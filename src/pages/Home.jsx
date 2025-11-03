@@ -41,13 +41,17 @@ function Home() {
                 </div>
 
                 <div className="hero-content">
-                    <h1 className="hero-title">Transformer une idée en réalité avec de la patience</h1>
+                    <div className="hero-title">Développeur</div>
                     <p className="hero-description">
-                        Développeur full-stack passionné, je veux mettre mes compétences au service d’entreprises en quête de nouveaux talents.
+                        Spécialisé en React.js et Node.js, je crée des applications web performantes et évolutives.
+                        Mon objectif : allier développement et DevOps pour des solutions robustes et innovantes.
                     </p>
                     <div className="cta-buttons">
-                        <a href="/resume" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                            CV <i className="fas fa-external-link-alt"></i>
+                        <a href="/projects" className="btn btn-primary">
+                            Voir mes projets <i className="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="/resume" className="btn btn-secondary" target="_blank">
+                            Télécharger mon CV <i className="fas fa-download"></i>
                         </a>
                     </div>
                 </div>

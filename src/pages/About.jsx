@@ -34,10 +34,10 @@ function About() {
         { name: 'React.js', level: 'Avancé', icon: 'fab fa-react' },
         { name: 'HTML/CSS', level: 'Avancé', icon: 'fas fa-code' },
         { name: 'Node.js', level: 'Intermédiaire', icon: 'fab fa-node-js' },
+        { name: 'Typescript', level: 'Intermédiaire', icon: 'fab fa-js' },
         { name: 'Python', level: 'Débutant', icon: 'fab fa-python' },
         { name: 'Java', level: 'Intermédiaire', icon: 'fab fa-java' },
         { name: 'PHP', level: 'Débutant', icon: 'fab fa-php' },
-        { name: 'Typescript', level: 'Débutant', icon: 'fab fa-js' },
         { name: 'Git', level: 'Intermédiaire', icon: 'fab fa-git-alt' },
         { name: 'MongoDB', level: 'Avancé', icon: 'fas fa-database' },
         { name: 'Mariadb', level: 'Avancé', icon: 'fas fa-database' },
@@ -114,7 +114,7 @@ function About() {
                 </section>
 
                 <section className="values-section fade-in-element">
-                    <h2>Mes Valeurs</h2>
+                    <h2>Mes inspirations</h2>
                     <div className="values-grid">
                         <div className="value-card">
                             <i className="fas fa-code"></i>
@@ -130,11 +130,6 @@ function About() {
                             <i className="fas fa-lightbulb"></i>
                             <h3>Innovation</h3>
                             <p>Adopter de nouvelles technologies et méthodes pour résoudre les défis</p>
-                        </div>
-                        <div className="value-card">
-                            <i className="fas fa-heart"></i>
-                            <h3>Centré Utilisateur</h3>
-                            <p>Placer l’utilisateur au cœur de chaque choix de conception et de développement</p>
                         </div>
                     </div>
                 </section>
