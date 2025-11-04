@@ -41,9 +41,11 @@ function About() {
         // Frameworks & Libraries
         { name: 'React.js', level: 'Avancé', icon: 'fab fa-react', category: 'framework' },
         { name: 'Tailwind CSS', level: 'Avancé', icon: 'fa fa-css3', category: 'framework' },
+        { name: 'Bootstrap', level: 'Intermédiaire', icon: 'fab fa-bootstrap', category: 'framework' },
         { name: 'Node.js', level: 'Intermédiaire', icon: 'fab fa-node-js', category: 'framework' },
         { name: 'Express.js', level: 'Intermédiaire', icon: 'fab fa-node-js', category: 'framework' },
-        { name: 'Bootstrap', level: 'Intermédiaire', icon: 'fab fa-bootstrap', category: 'framework' },
+        { name: 'Next.js', level: 'Intermédiaire', icon: 'fab fa-node-js', category: 'framework' },
+        { name: 'Vue.js', level: 'Intermédiaire', icon: 'fab fa-node-js', category: 'framework' },
 
         // Outils
         { name: 'VS Code', level: 'Avancé', icon: 'fas fa-code', category: 'outil' },
