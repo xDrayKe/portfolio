@@ -80,6 +80,30 @@ const projects = {
             status: "Terminé",
             featured: true
         },
+        {
+            id: 1,
+            title: 'Clone de Discord ',
+            description: 'Un projet en React et en Socket.io afin de faire un chat en temps réel proche de Discord.',
+            image: 'https://media.istockphoto.com/id/1305662902/fr/photo/deux-hommes-de-dessin-anim%C3%A9-avec-des-bulles-de-discours.jpg?b=1&s=612x612&w=0&k=20&c=H93B5I3yVAFDgeFlEH8MTxJk7rfeEFxvq7JxhVAmUxc=',
+            technologies: ['React', 'Socket.io', 'Javascript'],
+            category: 'frontend',
+            github: 'https://github.com/xDrayKe/discord-clone',
+            demo: 'https://discord-clone-smoky-nu.vercel.app/',
+            status: "Terminé",
+            featured: true
+        },
+        {
+            id: 1,
+            title: 'Tableau Kanban',
+            description: 'Un tableau Kanban interactif pour gérer des tâches, avec fonctionnalités de glisser-déposer. ',
+            image: 'https://media.istockphoto.com/id/1364959136/fr/photo/groupe-de-personnes-%C3%A9crivant-sur-des-notes-collantes.jpg?s=612x612&w=0&k=20&c=up39Q0z1A2pE1oWzfswgJm-ey7LX07wPZay0WrXD6zI=',
+            technologies: ['React', 'CSS3', 'Vite', 'Javascript'],
+            category: 'frontend',
+            github: 'https://github.com/xDrayKe/kanban-board',
+            demo: 'https://kanban-board-ruby-five.vercel.app/',
+            status: "Terminé",
+            featured: true
+        },
     ],
     completedNoDemo: [
         {
