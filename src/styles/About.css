@@ -428,3 +428,125 @@ h2 {
       grid-template-columns: 1fr;
    }
 }
+
+/* Grille 2x2 pour les catégories de compétences */
+.skills-categories-grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 2rem;
+   margin-top: 2rem;
+}
+
+/* Boîte de catégorie */
+.category-box {
+   background: var(--card-bg, #f8f9fa);
+   border-radius: 12px;
+   padding: 1.5rem;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   text-align: center;
+}
+
+.category-box:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Titre de la catégorie */
+.category-title {
+   font-size: 1.5rem;
+   font-weight: 600;
+   margin-bottom: 1.5rem;
+   padding-bottom: 0.75rem;
+   border-bottom: 3px solid var(--primary-color, #007bff);
+   color: var(--text-color, #333);
+}
+
+/* Container des compétences */
+.category-skills {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+/* Item de compétence */
+.skill-item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0.75rem;
+   background: var(--skill-bg, #fff);
+   border-radius: 8px;
+   transition: background 0.3s ease;
+}
+
+.skill-item:hover {
+   background: var(--skill-hover-bg, #f0f0f0);
+}
+
+/* Info de la compétence (icône + nom) */
+.skill-info {
+   display: flex;
+   align-items: center;
+   gap: 0.75rem;
+}
+
+.skill-info i {
+   font-size: 1.5rem;
+   color: var(--icon-color, #007bff);
+}
+
+.skill-name {
+   font-weight: 500;
+   color: var(--text-color, #333);
+}
+
+/* Badge de niveau */
+.skill-badge {
+   padding: 0.25rem 0.75rem;
+   border-radius: 20px;
+   font-size: 0.85rem;
+   font-weight: 600;
+   white-space: nowrap;
+}
+
+.skill-badge-avancé {
+   background: #d4edda;
+   color: #155724;
+}
+
+.skill-badge-intermédiaire {
+   background: #fff3cd;
+   color: #856404;
+}
+
+.skill-badge-débutant {
+   background: #cce5ff;
+   color: #004085;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+   .skills-categories-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+   }
+}
+
+@media (max-width: 576px) {
+   .category-box {
+      padding: 1rem;
+   }
+
+   .category-title {
+      font-size: 1.25rem;
+   }
+
+   .skill-info i {
+      font-size: 1.25rem;
+   }
+
+   .skill-name {
+      font-size: 0.9rem;
+   }
+}
